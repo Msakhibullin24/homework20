@@ -1,5 +1,4 @@
 import itertools
 
-def permutations(s, n):
-    return [''.join(p) for p in itertools.permutations(s, n)]
-
+def get_combinations(s, k):
+    return [''.join(c) for i in range(1, k+1) for c in itertools.combinations(s, i)]
